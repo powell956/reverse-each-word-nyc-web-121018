@@ -4,8 +4,8 @@ def reverse_each_word(string)
   new_words = []
 
   words.each do |word|
-    letters = word.split
-    letters.reverse
+    letters = word.split("")
+    letters.reverse!
     new_word = letters.join
     new_words << new_word
   end
