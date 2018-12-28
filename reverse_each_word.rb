@@ -18,9 +18,7 @@ def reverse_each_word(string)
   words = string.split
 
   words.collect do |word|
-    letters = word.split("")
-    letters.reverse!
-    new_word = letters.join
+    word.reverse!
   end
 
   words.join(" ")
